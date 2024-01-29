@@ -1,0 +1,17 @@
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\bin\Debug\net6.0\AplikacioniSloj.deps.json
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\bin\Debug\net6.0\AplikacioniSloj.dll
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\bin\Debug\net6.0\AplikacioniSloj.pdb
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\bin\Debug\net6.0\DomenskiSloj.dll
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\bin\Debug\net6.0\SlojPodataka.dll
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\bin\Debug\net6.0\DomenskiSloj.pdb
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\bin\Debug\net6.0\SlojPodataka.pdb
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\obj\Debug\net6.0\AplikacioniSloj.csproj.AssemblyReference.cache
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\obj\Debug\net6.0\AplikacioniSloj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\obj\Debug\net6.0\AplikacioniSloj.AssemblyInfoInputs.cache
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\obj\Debug\net6.0\AplikacioniSloj.AssemblyInfo.cs
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\obj\Debug\net6.0\AplikacioniSloj.csproj.CoreCompileInputs.cache
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\obj\Debug\net6.0\AplikacioniSloj.csproj.CopyComplete
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\obj\Debug\net6.0\AplikacioniSloj.dll
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\obj\Debug\net6.0\refint\AplikacioniSloj.dll
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\obj\Debug\net6.0\AplikacioniSloj.pdb
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\AplikacioniSloj\obj\Debug\net6.0\ref\AplikacioniSloj.dll

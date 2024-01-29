@@ -1,0 +1,26 @@
+CREATE PROCEDURE [DajPasosIzPogleda]
+AS
+BEGIN
+    SELECT * FROM PasosSaKorisnikomITerminom
+END
+GO
+
+CREATE PROCEDURE [DajPasosSaDatumom](
+@IzabraniDatum [date])
+AS
+BEGIN
+    SELECT *
+    FROM PasosSaKorisnikomITerminom
+    WHERE Datum = @IzabraniDatum
+END
+GO
+
+CREATE PROCEDURE [DajPasosPoJMBG](
+@JMBGKorisnika [nvarchar](13))
+AS
+BEGIN
+    SELECT *
+    FROM PasosSaKorisnikomITerminomIJMBG
+    WHERE JMBG = @JMBGKorisnika
+END
+GO

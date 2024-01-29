@@ -1,0 +1,47 @@
+﻿@using System.Data;
+@model System.Data.DataSet
+
+
+@{
+    ViewData["Title"] = "Пасоши";
+}
+
+<form asp-action="AdminPregledPasosa" asp-controller="Admin" method="get">
+    <label for="datumFilter">Изаберите датум:</label>
+    <select id="datumFilter" name="datum" asp-items="ViewBag.ListaDatuma"
+            value="@((ViewBag.IzabraniDatum != null) ? ViewBag.IzabraniDatum.ToString("yyyy-MM-dd") : null)">
+    </select>
+    <button type="submit" class="btn btn-sm btn-success">Потврди</button>
+</form>
+
+
+<h1>Списак свих пасоша:</h1>
+
+@if (Model != null && Model.Tables.Count > 0 && Model.Tables[0].Rows.Count > 0)
+{
+        <table>
+            <tr>
+            <th>Датум Истека</th>
+            <th>Име</th>
+            <th>Презиме</th>
+            <th>Датум Термина</th>
+            <th>Време Термина</th>
+            </tr>
+
+        @foreach (DataRow row in Model.Tables[0].Rows)
+        {
+            <tr>
+                <td>@((row["DatumIsteka"] as DateTime?)?.ToString("dd/MM/yyyy"))</td>
+                <td>@row["Ime"]</td>
+                <td>@row["Prezime"]</td>
+                <td>@((row["Datum"] as DateTime?)?.ToString("dd/MM/yyyy"))</td>
+                <td>@(((TimeSpan)row["Vreme"]).ToString("hh\\:mm"))</td>
+            </tr>
+        }
+        </table>
+}
+
+else
+{
+            <p>Нема пасоша.</p>
+}

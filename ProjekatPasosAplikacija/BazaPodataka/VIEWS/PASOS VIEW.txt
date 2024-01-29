@@ -1,0 +1,28 @@
+CREATE VIEW PasosSaKorisnikomITerminom AS
+SELECT
+    PASOS.DatumIsteka,
+    KORISNIK.Ime,
+    KORISNIK.Prezime,
+    TERMIN.Datum,
+    TERMIN.Vreme
+FROM
+    PASOS
+JOIN
+    KORISNIK ON PASOS.JMBGKorisnika = KORISNIK.JMBG
+JOIN
+    TERMIN ON PASOS.IDTermina = TERMIN.IDTermina;
+
+CREATE VIEW PasosSaKorisnikomITerminomIJMBG AS
+SELECT
+    KORISNIK.JMBG,
+    PASOS.DatumIsteka,
+    KORISNIK.Ime,
+    KORISNIK.Prezime,
+    TERMIN.Datum,
+    TERMIN.Vreme
+FROM
+    PASOS
+JOIN
+    KORISNIK ON PASOS.JMBGKorisnika = KORISNIK.JMBG
+JOIN
+    TERMIN ON PASOS.IDTermina = TERMIN.IDTermina;

@@ -1,0 +1,82 @@
+﻿@using System.Data;
+@model System.Data.DataSet
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Издавање Пасоша</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2, h3, h4 {
+            color: #1f497d;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        table, th, td {
+            border: 1px solid #1f497d;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        h4 {
+            margin-top: 20px;
+            color: #1f497d;
+        }
+    </style>
+</head>
+<body>
+    <h1>РЕПУБЛИКА СРБИЈА</h1>
+    <h2>ИЗДАВАЊЕ ПАСОША</h2>
+    <h3>ШТАМПА ИНФОРМАЦИЈА О ПАСОШУ</h3>
+
+    @if (Model != null && Model.Tables.Count > 0 && Model.Tables[0].Rows.Count > 0)
+    {
+        <table>
+            <tr>
+                <th>ЈМБГ</th>
+                <th>Име</th>
+                <th>Презиме</th>
+                <th>Датум Истека Пасоша</th>
+                <th>Датум Термина</th>
+                <th>Време Термина</th>
+            </tr>
+            @foreach (DataRow row in Model.Tables[0].Rows)
+            {
+                <tr>
+                    <td>@row["JMBG"]</td>
+                    <td>@row["Ime"]</td>
+                    <td>@row["Prezime"]</td>
+                    <td>@((row["DatumIsteka"] as DateTime?)?.ToString("dd/MM/yyyy"))</td>
+                    <td>@((row["Datum"] as DateTime?)?.ToString("dd/MM/yyyy"))</td>
+                    <td>@(((TimeSpan)row["Vreme"]).ToString("hh\\:mm"))</td>
+                </tr>
+            }
+        </table>
+    }
+    else 
+    {
+        <p>Нема пасоша за штампу.</p>
+    }
+
+    <h4>Понесите иштампану верзију овог документа при подизању вашег пасоша.</h4>
+</body>
+</html>
+

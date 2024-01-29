@@ -1,0 +1,55 @@
+CREATE PROCEDURE [NoviZahtev]( 
+@DatumIVremeZahteva [datetime],
+@JMBGKorisnika [nvarchar](13)
+)
+AS
+BEGIN
+Insert into ZAHTEV(DatumIVremeZahteva, JMBGKorisnika, Status) values (@DatumIVremeZahteva, @JMBGKorisnika, 2)
+END
+GO
+
+CREATE PROCEDURE [ObrisiZahtev](
+@IDZahteva [int])
+AS
+BEGIN
+Delete from ZAHTEV where IDZahteva=@IDZahteva
+END
+GO
+
+CREATE PROCEDURE [OdbijZahtev](
+@IDZahteva [int])
+AS
+BEGIN
+UPDATE ZAHTEV SET Status = 1 WHERE IDZahteva=@IDZahteva;
+END
+GO
+
+CREATE PROCEDURE [OdobriZahtev](
+@IDZahteva [int])
+AS
+BEGIN
+UPDATE ZAHTEV SET Status = 3 where IDZahteva=@IDZahteva
+END
+GO
+
+CREATE PROCEDURE [DajSveZahteveSaStatusom]
+AS
+BEGIN
+SELECT * FROM ZahtevSaStatusom 
+END
+GO
+
+CREATE PROCEDURE [DajSveZahtevePoStatusu] (
+@Status [int])
+AS
+BEGIN
+SELECT * FROM ZahtevSaStatusom WHERE Status=@Status
+END
+GO
+
+CREATE PROCEDURE [dbo].[DajSveZahtevePoJMBG] (
+    @JMBGKorisnika nvarchar(13))
+AS
+BEGIN
+    SELECT * FROM ZAHTEVSASTATUSOM WHERE JMBGKorisnika = @JMBGKorisnika;
+END

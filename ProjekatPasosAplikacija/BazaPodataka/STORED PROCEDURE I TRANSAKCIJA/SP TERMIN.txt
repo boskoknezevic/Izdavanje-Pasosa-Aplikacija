@@ -1,0 +1,15 @@
+CREATE PROCEDURE IzlistajDatumeTermina
+AS
+BEGIN
+    SELECT DISTINCT Datum
+    FROM TERMIN
+END
+GO
+
+CREATE PROCEDURE DajSveTermine
+AS
+BEGIN
+    SELECT [IDTermina], [Datum], [Vreme]
+    FROM [dbo].[TERMIN]
+END
+GO

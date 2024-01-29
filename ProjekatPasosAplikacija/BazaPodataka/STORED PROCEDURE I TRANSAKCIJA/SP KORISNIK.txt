@@ -1,0 +1,70 @@
+CREATE PROCEDURE [NoviKorisnik]
+( 
+@JMBG [nvarchar](13),
+@Ime [nvarchar](20),
+@Prezime [nvarchar](40),
+@Drzavljanstvo [nvarchar](40),
+@Email [nvarchar](20),
+@Lozinka [nvarchar](20)
+)
+AS
+BEGIN
+Insert into KORISNIK(JMBG, Ime, Prezime, Drzavljanstvo, Email, Lozinka, TipKorisnika) values (@JMBG, @Ime, @Prezime, @Drzavljanstvo, @Email, @Lozinka, 2)
+END
+GO
+
+CREATE PROCEDURE [ObrisiKorisnika](
+@JMBG [nvarchar](13))
+AS
+BEGIN
+Delete from KORISNIK where JMBG=@JMBG
+END
+GO
+
+CREATE PROCEDURE [IzmeniKorisnika](
+@StariJMBG [int],
+@JMBG [nvarchar](13),
+@Ime [nvarchar](20),
+@Prezime [nvarchar](40),
+@Drzavljanstvo [nvarchar](40),
+@Email [nvarchar](20),
+@Lozinka [nvarchar](20)
+)
+AS
+BEGIN
+Update KORISNIK set JMBG=@JMBG, Ime=@Ime, Prezime=@Prezime, Drzavljanstvo=@Drzavljanstvo, Email=@Email, Lozinka=@Lozinka where JMBG=@StariJMBG
+END
+GO
+
+CREATE PROCEDURE [IzmeniTipKorisnika](
+@JMBG [nvarchar](13),
+@TipKorisnika [int]
+)
+AS
+BEGIN
+Update KORISNIK set TipKorisnika=@TipKorisnika where JMBG=@JMBG
+END
+GO
+
+
+CREATE PROCEDURE [DajSveKorisnike]
+AS
+select * from KorisnikSaTipom
+GO
+
+CREATE PROCEDURE [DajKorisnikaPoPrezimenu]
+( @Prezime [nvarchar](40)
+)
+AS
+SELECT * FROM KorisnikSaTipom WHERE Prezime LIKE '%' + @Prezime + '%';
+GO
+
+
+CREATE PROCEDURE [dbo].[PronadjiKorisnikaPoEmailu]
+    @Email NVARCHAR(50)
+AS
+BEGIN
+    SELECT *
+    FROM KORISNIK
+    WHERE Email = @Email;
+END;

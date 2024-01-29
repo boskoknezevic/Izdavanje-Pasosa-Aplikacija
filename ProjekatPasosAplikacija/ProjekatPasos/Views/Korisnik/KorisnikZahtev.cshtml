@@ -1,0 +1,37 @@
+﻿@using System.Data;
+@model System.Data.DataSet
+
+@{
+    ViewData["Title"] = "Поднесите захтев";
+}
+
+<form asp-controller="Korisnik" asp-action="DodajZahtev" method="post">
+<button type="submit" class="btn btn-sm btn-success" name="action" value="dodaj">Поднеси захтев</button>
+</form>
+
+<h1>Списак претходних захтева:</h1>
+
+@if (Model != null && Model.Tables.Count > 0 && Model.Tables[0].Rows.Count > 0)
+{
+    <table>
+        <tr>
+            <th>Датум и Време Захтева</th>
+            <th>ЈМБГ Корисника</th>
+            <th>Статус Захтева</th>
+        </tr>
+
+        @foreach (DataRow row in Model.Tables[0].Rows)
+        {
+            <tr>
+                <td>@row["DatumIVremeZahteva"]</td>
+                <td>@row["JMBGKorisnika"]</td>
+                <td>@row["Status"]</td>
+            </tr>
+        }
+    </table>
+}
+
+else
+{
+    <p>Нема претходних захтева.</p>
+}

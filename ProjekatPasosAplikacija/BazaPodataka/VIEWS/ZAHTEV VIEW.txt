@@ -1,0 +1,11 @@
+CREATE VIEW ZahtevSaStatusom AS
+SELECT
+    ZAHTEV.IDZahteva,
+    ZAHTEV.DatumIVremeZahteva,
+    ZAHTEV.JMBGKorisnika,
+    ZAHTEV.Status,
+    TIPSTATUSA.Opis
+FROM
+    ZAHTEV
+JOIN
+    TIPSTATUSA ON ZAHTEV.Status = TIPSTATUSA.ID

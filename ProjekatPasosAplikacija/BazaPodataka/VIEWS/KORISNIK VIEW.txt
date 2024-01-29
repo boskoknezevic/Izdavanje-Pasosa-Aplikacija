@@ -1,0 +1,13 @@
+CREATE VIEW KorisnikSaTipom AS
+SELECT
+    KORISNIK.JMBG,
+    KORISNIK.Ime,
+    KORISNIK.Prezime,
+    KORISNIK.Drzavljanstvo,
+    KORISNIK.Email,
+    KORISNIK.Lozinka,
+    TIPKORISNIKA.Opis AS TipKorisnikaOpis
+FROM
+    KORISNIK 
+JOIN
+    TIPKORISNIKA ON KORISNIK.TipKorisnika = TIPKORISNIKA.ID;

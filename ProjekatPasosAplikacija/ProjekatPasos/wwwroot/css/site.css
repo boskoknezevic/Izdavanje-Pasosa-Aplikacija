@@ -1,0 +1,71 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+footer {
+    font-size: 15px;
+    background-color: limegreen;
+}
+
+.nav-item {
+    color: white;
+}
+
+
+.container-fluid {
+    color: white;
+    font-size: 30px;
+    background-color: limegreen;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+}
+
+p {
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+button {
+    text-align: center;
+    font-size: 70px;
+   
+    color: white;
+    background-color: limegreen;
+}
+
+
+
+.footer.text-muted {
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    color: white !important;
+}
+
+.row {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.text-center {
+    justify-content: center;
+}
+

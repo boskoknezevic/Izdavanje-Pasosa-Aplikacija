@@ -1,0 +1,39 @@
+﻿@using System.Data;
+@model System.Data.DataSet
+
+
+
+@{
+    ViewData["Title"] = "Термини";
+}
+
+<form asp-action="AdminTerminStampa" asp-controller="Admin" method="get">
+    <button type="submit" class="btn btn-sm btn-success">Штампај</button>
+</form>
+
+<h1>Списак свих термина:</h1>
+
+@if (Model != null && Model.Tables.Count > 0 && Model.Tables[0].Rows.Count > 0)
+{
+    <table>
+        <tr>
+            <th>ИД Термина</th>
+            <th>Датум Термина</th>
+            <th>Време Термина</th>
+        </tr>
+
+        @foreach (DataRow row in Model.Tables[0].Rows)
+        {
+            <tr>
+                    <td>@row["IDTermina"]</td>
+                    <td>@((row["Datum"] as DateTime?)?.ToString("dd/MM/yyyy"))</td>
+                    <td>@(((TimeSpan)row["Vreme"]).ToString("hh\\:mm"))</td>
+            </tr>
+        }
+    </table>
+}
+
+else
+{
+    <p>Нема термина.</p>
+}

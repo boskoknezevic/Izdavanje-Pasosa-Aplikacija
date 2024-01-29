@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PrezentacioniSloj
+build_property.RootNamespace = PrezentacioniSloj
+build_property.ProjectDir = C:\Users\bosko\source\repos\ProjekatPasosAplikacija\ProjekatPasos\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\bosko\source\repos\ProjekatPasosAplikacija\ProjekatPasos
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Admin/AdminPocetna.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5Qb2NldG5hLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Admin/AdminPregledKorisnika.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5QcmVnbGVkS29yaXNuaWthLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Admin/AdminPregledKorisnikaDetalji.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5QcmVnbGVkS29yaXNuaWthRGV0YWxqaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Admin/AdminPregledPasosa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5QcmVnbGVkUGFzb3NhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Admin/AdminPregledTermina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5QcmVnbGVkVGVybWluYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Admin/AdminPregledZahteva.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5QcmVnbGVkWmFodGV2YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Admin/AdminTerminStampa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5UZXJtaW5TdGFtcGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Home/OServisu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPU2VydmlzdS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Home/Pocetna.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb2NldG5hLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Home/PrijavaIliRegistracija.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcmlqYXZhSWxpUmVnaXN0cmFjaWphLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Korisnik/KorisnikPasosStampa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWtcS29yaXNuaWtQYXNvc1N0YW1wYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Korisnik/KorisnikPocetna.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWtcS29yaXNuaWtQb2NldG5hLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Korisnik/KorisnikProfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWtcS29yaXNuaWtQcm9maWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Korisnik/KorisnikZahtev.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWtcS29yaXNuaWtaYWh0ZXYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Nalog/Prijava.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFsb2dcUHJpamF2YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Nalog/Registracija.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFsb2dcUmVnaXN0cmFjaWphLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bosko/source/repos/ProjekatPasosAplikacija/ProjekatPasos/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ik8g9kenhn

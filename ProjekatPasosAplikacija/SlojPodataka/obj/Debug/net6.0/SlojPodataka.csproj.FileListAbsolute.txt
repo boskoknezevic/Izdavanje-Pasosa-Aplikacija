@@ -1,0 +1,12 @@
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\SlojPodataka\bin\Debug\net6.0\SlojPodataka.deps.json
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\SlojPodataka\bin\Debug\net6.0\SlojPodataka.dll
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\SlojPodataka\bin\Debug\net6.0\SlojPodataka.pdb
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\SlojPodataka\obj\Debug\net6.0\SlojPodataka.csproj.AssemblyReference.cache
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\SlojPodataka\obj\Debug\net6.0\SlojPodataka.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\SlojPodataka\obj\Debug\net6.0\SlojPodataka.AssemblyInfoInputs.cache
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\SlojPodataka\obj\Debug\net6.0\SlojPodataka.AssemblyInfo.cs
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\SlojPodataka\obj\Debug\net6.0\SlojPodataka.csproj.CoreCompileInputs.cache
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\SlojPodataka\obj\Debug\net6.0\SlojPodataka.dll
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\SlojPodataka\obj\Debug\net6.0\refint\SlojPodataka.dll
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\SlojPodataka\obj\Debug\net6.0\SlojPodataka.pdb
+C:\Users\bosko\source\repos\ProjekatPasosAplikacija\SlojPodataka\obj\Debug\net6.0\ref\SlojPodataka.dll

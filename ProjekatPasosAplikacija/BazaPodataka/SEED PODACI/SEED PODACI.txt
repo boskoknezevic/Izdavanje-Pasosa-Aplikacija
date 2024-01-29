@@ -1,0 +1,8 @@
+INSERT INTO TIPKORISNIKA (Opis) VALUES ('admin');
+INSERT INTO TIPKORISNIKA (Opis) VALUES ('obican_korisnik');
+
+INSERT INTO KORISNIK (JMBG, Ime, Prezime, Drzavljanstvo, Email, Lozinka, TipKorisnika) VALUES ('1111111111111', 'Admin', 'Admin', 'Srpsko', 'admin@izdavanjepasosa.com', 'lozinka', 1);
+
+INSERT INTO TIPSTATUSA (Opis) VALUES ('odbijen');
+INSERT INTO TIPSTATUSA (Opis) VALUES ('na_cekanju');
+INSERT INTO TIPSTATUSA (Opis) VALUES ('odobren');

@@ -1,0 +1,5 @@
+<ograničenja>
+  <maksimalanBrojKorisnika>
+    <tipKorisnika id="1" maksimum="2" />
+  </maksimalanBrojKorisnika>
+</ograničenja>

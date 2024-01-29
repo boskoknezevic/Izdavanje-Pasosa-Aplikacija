@@ -1,0 +1,85 @@
+USE [master]
+GO
+
+CREATE DATABASE [izdavanjePasosa] 
+GO
+
+USE [izdavanjePasosa]
+GO
+
+CREATE TABLE [dbo].[KORISNIK](
+	[JMBG] [nvarchar](13) NOT NULL PRIMARY KEY,
+	[Ime] [nvarchar](20) NOT NULL,
+	[Prezime] [nvarchar](40) NOT NULL,
+	[Drzavljanstvo] [nvarchar](20) NOT NULL,
+	[Email] [nvarchar](40) NOT NULL,
+	[Lozinka] [nvarchar](20) NOT NULL,
+	[TipKorisnika] [int] NOT NULL
+)
+GO
+
+
+CREATE TABLE [dbo].[PASOS](
+	[IDPasosa] [int] IDENTITY(1,1) PRIMARY KEY,
+	[JMBGKorisnika] [nvarchar](13) NOT NULL,
+	[IDTermina] [int] NOT NULL,
+	[DatumIsteka] [date] NOT NULL
+)
+GO
+
+CREATE TABLE [dbo].[TERMIN](
+	[IDTermina] [int] IDENTITY(1,1) PRIMARY KEY,
+	[Datum] [date] NOT NULL,
+	[Vreme] [time] NOT NULL,
+)
+GO
+
+CREATE TABLE [dbo].[ZAHTEV](
+	[IDZahteva] [int] IDENTITY(1,1) PRIMARY KEY,
+	[DatumiVremeZahteva] [datetime] NOT NULL,
+	[JMBGKorisnika] [nvarchar](13) NOT NULL,
+	[Status] [int] NOT NULL
+)
+GO
+
+CREATE TABLE [dbo].[TIPKORISNIKA](
+	[ID] [int] IDENTITY(1,1) PRIMARY KEY,
+	[Opis] [nvarchar](20) NOT NULL
+)
+GO
+
+CREATE TABLE [dbo].[TIPSTATUSA](
+	[ID] [int] IDENTITY(1,1) PRIMARY KEY,
+	[Opis] [nvarchar](20) NOT NULL
+)
+GO
+
+ALTER TABLE [dbo].[ZAHTEV] ADD CONSTRAINT
+[FK_ZAHTEV_KORISNIK] FOREIGN KEY([JMBGKorisnika])
+REFERENCES [dbo].[KORISNIK] ([JMBG])
+ON UPDATE CASCADE
+GO
+
+ALTER TABLE [dbo].[PASOS] ADD CONSTRAINT
+[FK_PASOS_KORISNIK] FOREIGN KEY([JMBGKorisnika])
+REFERENCES [dbo].[KORISNIK] ([JMBG])
+ON UPDATE CASCADE
+GO
+
+ALTER TABLE [dbo].[PASOS] ADD CONSTRAINT
+[FK_PASOS_TERMIN] FOREIGN KEY([IDTermina])
+REFERENCES [dbo].[TERMIN] ([IDTermina])
+ON UPDATE CASCADE
+GO
+
+ALTER TABLE [dbo].[KORISNIK] ADD CONSTRAINT
+[FK_KORISNIK_TIP] FOREIGN KEY([TipKorisnika])
+REFERENCES [dbo].[TIPKORISNIKA] ([ID])
+ON UPDATE CASCADE
+GO
+
+ALTER TABLE [dbo].[ZAHTEV] ADD CONSTRAINT
+[FK_ZAHTEV_STATUS] FOREIGN KEY([Status])
+REFERENCES [dbo].[TIPSTATUSA] ([ID])
+ON UPDATE CASCADE
+GO

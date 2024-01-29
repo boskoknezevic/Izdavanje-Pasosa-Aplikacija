@@ -1,0 +1,5 @@
+<poslovnaPravila>
+  <statusZahteva id="1" opis="Odbijen" />
+  <statusZahteva id="2" opis="Na čekanju" />
+  <statusZahteva id="3" opis="Odobren" />
+</poslovnaPravila>

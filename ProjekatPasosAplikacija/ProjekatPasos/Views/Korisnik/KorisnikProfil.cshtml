@@ -1,0 +1,58 @@
+﻿@model RegistracijaModel
+
+@{
+    ViewData["Title"] = "Измените профил";
+}
+
+<head>
+</head>
+<div class="card">
+    <h4 class="text-center mb-4">Измени податке</h4>
+    <form asp-action="IzmeniPodatke" method="post">
+
+                <div class="row text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex">
+                        <label asp-for="Ime">Име<span class="text-danger"> *</span></label>
+                        <input asp-for="Ime" class="form-control">
+                        <span asp-validation-for="Ime" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-sm-6 flex-column d-flex">
+                        <label asp-for="Prezime">Презиме<span class="text-danger"> *</span></label>
+                        <input asp-for="Prezime" class="form-control">
+                        <span asp-validation-for="Prezime" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex">
+                        <label asp-for="Email">E-mail адреса<span class="text-danger"> *</span></label>
+                        <input asp-for="Email" class="form-control">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-sm-6 flex-column d-flex">
+                        <label asp-for="Lozinka">Лозинка<span class="text-danger"> *</span></label>
+                        <input asp-for="Lozinka" class="form-control">
+                        <span asp-validation-for="Lozinka" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex">
+                        <label asp-for="Drzavljanstvo">Држављанство<span class="text-danger"> *</span></label>
+                        <input asp-for="Drzavljanstvo" class="form-control">
+                        <span asp-validation-for="Drzavljanstvo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-sm-6 flex-column d-flex">
+                        <label asp-for="JMBG">ЈМБГ<span class="text-danger"> *</span></label>
+                        <input asp-for="JMBG" class="form-control">
+                        <span asp-validation-for="JMBG" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="btn-group btn-group-sm" role="group">
+            <button type="submit" class="btn btn-sm btn-success" name="action" value="izmeni">Измени податке</button>
+            <button type="submit" class="btn btn-danger btn-sm" name="action" value="obrisi">Обриши налог</button>
+        </div>
+
+            </form>
+        </div>

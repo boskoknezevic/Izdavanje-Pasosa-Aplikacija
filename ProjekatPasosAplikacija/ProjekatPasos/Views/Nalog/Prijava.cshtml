@@ -1,0 +1,26 @@
+﻿@model PrijavaModel
+
+@{
+    ViewData["Title"] = "Пријава";
+}
+
+<div class="card">
+    <h4 class="text-center mb-4">Пријава</h4>
+    <form asp-action="Prijava" method="post" class="form">
+        <div class="row text-center">
+            <div class="form-group col-sm-4 flex-column d-flex">
+                <label asp-for="Email">E-mail адреса<span class="text-danger"> *</span></label>
+                <input asp-for="Email" class="form-control">
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="form-group col-sm-4 flex-column d-flex">
+                <label asp-for="Lozinka">Лозинка<span class="text-danger"> *</span></label>
+                <input asp-for="Lozinka" type="password" class="form-control">
+                <span asp-validation-for="Lozinka" class="text-danger"></span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-sm btn-success">ПРИЈАВИ СЕ</button>
+    </form>
+</div>

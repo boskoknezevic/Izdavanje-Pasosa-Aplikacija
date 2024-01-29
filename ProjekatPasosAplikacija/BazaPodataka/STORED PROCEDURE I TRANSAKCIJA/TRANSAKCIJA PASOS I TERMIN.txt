@@ -1,0 +1,39 @@
+CREATE PROCEDURE [NoviPasosITermin](
+    @Datum [date],
+    @Vreme [time],
+    @JMBGKorisnika [nvarchar](13),
+    @DatumIsteka [date]
+)
+AS
+BEGIN
+    BEGIN TRANSACTION
+
+    DECLARE @TerminID INT;
+
+    INSERT INTO TERMIN (Datum, Vreme)
+    VALUES (@Datum, @Vreme);
+
+    SET @TerminID = SCOPE_IDENTITY();
+
+    INSERT INTO PASOS (TerminID, JMBGKorisnika, DatumIsteka)
+    VALUES (@TerminID, @JMBGKorisnika, @DatumIsteka);
+
+    COMMIT
+END
+GO
+
+
+CREATE PROCEDURE [ObrisiPasosITermin](
+    @IDTermina [int]
+)
+AS
+BEGIN
+    BEGIN TRANSACTION
+
+    DELETE FROM PASOS WHERE IDTermina = @IDTermina
+
+    DELETE FROM TERMIN WHERE IDTermina = @IDTermina
+
+    COMMIT
+END
+GO
